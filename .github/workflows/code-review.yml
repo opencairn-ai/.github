@@ -1,0 +1,16 @@
+name: Automated code review
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review, synchronize]
+
+permissions: {}
+
+jobs:
+  claude-review:
+    if: ${{ !github.event.pull_request.draft }}
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: read
+    uses: opencairn-ai/gh-actions/.github/workflows/reusable-claude-review.yml@main
+    secrets: inherit
