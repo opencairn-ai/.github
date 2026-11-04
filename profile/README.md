@@ -1,23 +1,23 @@
-# Cairn
+<h1><img src="assets/cairn-alpha-banner.png" alt="Cairn Alpha, by Mozilla and Mila" width="100%"></h1>
 
-The opinionated, sovereign, open source AI stack.
+**The sovereign, open source AI inference stack.**
 
-**Model capability isn't the bottleneck.** \
-**Deployment is.**
+Cairn runs on infrastructure that your organization controls: in-house, at a
+partner or at a compute provider. Your teams connect their applications and
+agents to the stack through one API.
 
-The last two years produced the models. Next we produce the stacks people can actually run them on. Cairn is Mozilla and Mila's foundational research on the architecture of one of those stacks: the specific layers, the contracts between them, and which open source components fit each layer. *Opinionated, sovereign, open source.*
+Our goal is to define clear interface contracts between every layer and
+component of the stack, so that you can:
 
-The starting frame is eight layers — application, orchestration, retrieval and memory, evaluation and observability, model serving, models, data, infrastructure — with cross-cutting concerns like authentication, governance, cost, and security spanning all of them. Which of those are really distinct layers, which merge, and where the set needs to split further is part of the research.
+- **Connect components across layers.** Components that follow the same
+  contracts connect through the same interfaces, which reduces custom
+  integration code.
+- **Replace a component.** Swap in another component that passes the same
+  contract tests, with minimal disruption to the rest of the stack.
+- **Start from tested defaults.** For each layer, our reference implementation
+  uses the open source component with the best contract test results.
 
-For each layer, the work is either selecting a component with rationale, or specifying the interface an adequate component would need to satisfy. Architecture is complete either way.
+**The Alpha release is coming soon.** To read about the architecture,
+go to [opencairn.ai](https://opencairn.ai).
 
-Cairn is trying to be for open source AI what Ubuntu was for Linux: a curated, opinionated distribution.
-
-The picture we're designing against: your own frontier AI, running on your own machines. Your laptop, your data centre, your sovereign compute. One command to install, your data under your control, with governance and access control built in from the start, not bolted on after the demo.
-
-Cairn is a collaboration between Mila, one of the world's leading AI research institutes, and Mozilla, the mission-driven organization behind Firefox and the broader open web. Mozilla is convening and investing. Mila is leading the research behind the technical direction. Designing the architecture and the contracts between the layers of an opinionated open source AI stack is exactly the kind of foundational question a research institute is positioned to answer.
-
-This page will update as the work does. Come back.
-
-A collaboration between \
-[Mozilla](https://www.mozilla.org/) | [Mila](https://mila.quebec)
+A research collaboration between [Mozilla](https://www.mozilla.org/) and [Mila](https://mila.quebec/en).
