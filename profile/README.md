@@ -1,23 +1,40 @@
 <h1><img src="assets/cairn-alpha-banner.png" alt="Cairn Alpha, by Mozilla and Mila" width="100%"></h1>
 
-**The sovereign, open source AI inference stack.**
+**The sovereign, open source AI stack.**
 
-Cairn runs on infrastructure that your organization controls: in-house, at a
-partner or at a compute provider. Your teams connect their applications and
-agents to the stack through one API.
+Your organization must be able to adopt AI on its own terms: safely, easily and
+cost-effectively. The models are not the problem. Deploying and running them is.
 
-Our goal is to define clear interface contracts between every layer and
-component of the stack, so that you can:
+Cairn is an open source AI stack that an organization installs and operates on
+infrastructure that it controls.
 
-- **Connect components across layers.** Components that follow the same
-  contracts connect through the same interfaces, which reduces custom
-  integration code.
-- **Replace a component.** Swap in another component that passes the same
-  contract tests, with minimal disruption to the rest of the stack.
-- **Start from tested defaults.** For each layer, our reference implementation
-  uses the open source component with the best contract test results.
+- **Your data and your policies stay on your infrastructure.** Everything runs
+  on infrastructure that you control. You can inspect and replace each
+  component.
+- **Open source, without the assembly.** A tested stack. You install, upgrade
+  and operate it from its documentation.
+- **You own your capacity and your choices.** AI runs on infrastructure that
+  you own or share. Costs are predictable, and you do not depend on one
+  vendor.
 
-**The Alpha release is coming soon.** To read about the architecture,
-go to [opencairn.ai](https://opencairn.ai).
+### Our approach to building Cairn
+
+- **Tested open source components.** We specify what each layer must do. We
+  test existing open source components against that specification. Then we
+  select and integrate the best fit.
+- **Replaceable by contract.** We publish the interface contracts that each
+  component must satisfy. A component that satisfies them can replace another
+  one without rework.
+- **Your teams keep their tools.** Teams keep the chat assistants and coding
+  agents that they use now. They connect these tools to one API, on the
+  compute of your organization.
+- **Composition, not creation.** We write the code that connects components,
+  not new components. Where no suitable open source component exists, we
+  publish a specification.
+
+**The Alpha release is coming soon.** Go to [opencairn.ai](https://opencairn.ai)
+to learn more.
+
+Contact us at [bonjourhi@opencairn.ai](mailto:bonjourhi@opencairn.ai).
 
 A research collaboration between [Mozilla](https://www.mozilla.org/) and [Mila](https://mila.quebec/en).
